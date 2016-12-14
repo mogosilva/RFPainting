@@ -1,0 +1,383 @@
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */ }
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.clear {
+  clear: both; }
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */ }
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */ }
+
+h1,h2{
+  font-weight: 700;
+}
+h3{
+    font-size: 1.9em;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+p{
+  font-size: 1.4em;
+}
+img{
+  width: 100%;
+}
+body{
+  font-family: 'Arimo', sans-serif;
+  font-size: 16px;
+}
+#top{
+  background: url("../images/kitteryTradingPost_03.jpg") center center no-repeat;
+  background-size: cover;
+}
+#top h2{
+  text-align: center;
+  font-size: 6em;
+  padding: 2.5em 0;
+  color: #333;
+  background: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+}
+header{
+  background: #fff;
+}
+header{
+  position:fixed;
+  top: 0;
+  left:0;
+  right:0;
+}
+.home header{
+  display: none;
+}
+nav{
+  text-transform: uppercase;
+  margin: 0 auto;
+  border-bottom: 2px solid #a0a0a0;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
+nav h1, nav h2, nav ul{
+  width: 50%;
+  float: left;
+}
+h1, nav h2{
+  padding: 25px 0;
+  font-size: 2em;
+}
+h1 a, nav h2 a, .company-name{
+  border-bottom: 4px solid #000;
+  padding: 0 15px;
+}
+.nav-components h1, .nav-components h2 {
+    padding-left: 20px;
+}
+nav div {
+    max-width: 1430px;
+    margin: 0 auto;
+}
+nav li{
+  text-align: center;
+  float: left;
+  width: 25%;
+}
+nav li a{
+  display: inline-block;
+  padding: 30.5px 0;
+  width: 100%;
+  color: #a0a0a0;
+}
+nav li.facebook a {
+    color: #fff;
+    background: #3b5998;
+}
+nav li.facebook:hover a {
+    color: #fff;
+    background: #3b5998;
+    border-top: 5px solid transparent;
+}
+nav li a:link, nav li a:visited,nav li a:active{
+  border-top: 5px solid transparent;
+}
+nav li a:hover, nav li.active a{
+  color:#000;
+  border-top: 5px solid #cb0000;
+}
+.call-out{
+    text-align: center;
+    font-size: 3em;
+    padding: 25px 0;
+    text-transform: uppercase;
+}
+
+#main-content{
+  background: #dedede;
+}
+#main-content div{
+  display: inline-block;
+  width: 50%;
+  padding: 5%;
+  vertical-align: middle;
+  float: left;
+}
+#main-content img {
+    border: 5px solid #6a6a6a;
+    padding: 10px;
+}
+#main-content div.img-container {
+    padding: 110px;
+}
+#main-content div.float-right {
+    float: right;
+}
+#main-content article{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+#section-break{
+  background: url("../images/woodHouse_01.jpg") center center fixed no-repeat;
+  background-size: cover;
+  height: 514px;
+  width: 100%;
+}
+
+footer{
+    background:#dedede;
+    padding: 25px 0;
+    border-top: 2px solid #a0a0a0;
+}
+
+footer ul, footer h2{
+    display: block;
+    float: none;
+    margin: 0 auto;
+    width: 345px;
+}
+footer p {
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+footer h2{
+    text-align: center;
+    padding: 6px 0;
+}
+footer h2 a, footer p a{
+    border-bottom: none;
+    color: #a9a9a9;
+}
+footer nav{
+    border-bottom: none;
+}
+footer nav li{
+    width:31%;
+    margin: 1%;
+}
+footer nav li a{
+    color:#ff7a7a;
+    padding: 5.5px 0;
+}
+footer nav li a:hover{
+    color:#ff7a7a;
+    border-top: 5px solid transparent;
+}
+.facebook {
+    color: #3b5998;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Mobile Stick Nav
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.menu {
+  width: 20%;
+  display: none;
+  float: right;
+  max-width: 56px;
+  margin: 16px 20px 0 0;
+  cursor: pointer;
+}
+.menu-line {
+  width: 100%;
+  height: 6px;
+  background: #000;
+  margin: 8px 0;
+}
+
+/*============================================
+    PORTFOLIO
+=============================================*/
+#projects div{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 4px solid #a0a0a0;
+    padding: 15px 2%;
+    max-width: 1024px;
+}
+#projects div:last-child{
+    border-bottom: none;
+}
+#projects li{
+    float: left;
+    display: inline-block;
+    width: 25%;
+    cursor: pointer;
+    overflow: hidden;
+}
+#projects li img{
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#projects li:hover img{
+	-moz-transform: scale(1.1);
+  	-webkit-transform: scale(1.1);
+  	transform: scale(1.1);
+}
+/*============================================
+    ABOUT US
+=============================================*/
+#about .banner {
+    background: url(../images/hanoverTheatre.jpg) #eee no-repeat center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+#about .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 125px 0;
+}
+#about h2 {
+    font-size: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+#about section {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 25px 0;
+    background: #f0f0f0;
+}
+.specialties,.why-us {
+    width: 50%;
+    float: left;
+    padding: 25px;
+    text-align: center;
+}
+.specialties {
+    border-right: 3px solid #a0a0a0;
+}
+.tagline {
+    width: 80%;
+    margin: 35px auto;
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+}
+.call-to-action {
+    text-align: center;
+    margin-top: 35px;
+}
+.call-to-action+.call-to-action{
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+#about li {
+    font-size: 1.5rem;
+    padding: 5px 0px;
+}
+.list-line {
+    width: 20px;
+    height: 7px;
+    background: #000;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 8px;
+}
+.specialties ul,.why-us ul {
+    text-align: left;
+}
+
+/*====================================
+CONTACT
+====================================*/
+#contact-page{
+    background: url(../images/blueApartment.jpg) #eee no-repeat center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    width: 70%;
+    margin: 50px auto;
+}
+#contact-page .contact-container {
+    width: 100%;
+    background: rgba(255,255,255,0.75);
+    padding: 100px 55px 200px;
+}
+#contact-page .line {
+    width: 100%;
+    height: 3px;
+    background: #000;
+    margin: 3px 0;
+}
+
+#contact-page ul {
+    width: 350px;
+    margin: 65px auto;
+    font-size: 2rem;
+}
+#contact-page li {
+    padding: 5px 0;
+}
+
+/*==================================
+MEDIA QUERIES
+====================================*/
+@media only screen and (max-width:900px) {
+  .nav-components ul {
+    display: none;
+  }
+  nav h1, nav h2 {
+    width: 80%;
+  }
+  .menu {
+    display: block;
+  }
+  #main-content div {
+    width: 100%;
+  }
+  #main-content div.img-container {
+    padding: 25px 0;
+  }
+}

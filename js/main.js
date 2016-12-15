@@ -23,6 +23,10 @@ $(document).ready(function(){
     checkWidth();
   });
 
+  $(".menu").on("click",function(){
+      $(".side-menu").toggleClass("active");
+  });
+
 
 
 

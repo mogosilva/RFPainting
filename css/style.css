@@ -516,6 +516,9 @@ MEDIA QUERIES
        #contact-page ul {
            width: auto;
        }
+       #contact-page p {
+          font-size: 0.85em;
+       }
        #contact-page h3 {
            text-align: center;
            padding-left: 0;

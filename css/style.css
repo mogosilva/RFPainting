@@ -285,6 +285,7 @@ footer nav li a:hover{
     width: 25%;
     cursor: pointer;
     overflow: hidden;
+    max-height: 178px;
 }
 #projects li img{
     -moz-transition: all 0.3s;

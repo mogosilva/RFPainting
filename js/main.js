@@ -25,6 +25,11 @@ $(document).ready(function(){
 
   $(".menu").on("click",function(){
       $(".side-menu").toggleClass("active");
+      if($(".side-menu").hasClass("active")){
+          $(".menu-line").addClass("close");
+      }else{
+           $(".menu-line").removeClass("close");
+      }
   });
 
 
